@@ -1,0 +1,36 @@
+{
+  "name": "caifeng-collector",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Self-hosted visual data collection studio for authorized web scraping: multi-level crawling, XHR/JSONP sniffer, headless Chrome, captcha/risk/API management.",
+  "keywords": [
+    "web-scraping",
+    "data-collection",
+    "jsonp",
+    "vue3",
+    "element-plus",
+    "sqlite",
+    "self-hosted",
+    "headless-chrome"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/index.mjs",
+    "preview": "node --env-file-if-exists=.env server/index.mjs"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "element-plus": "^2.8.8",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.5"
+  }
+}
