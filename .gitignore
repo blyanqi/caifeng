@@ -3,7 +3,8 @@ dist
 .npm-cache
 .tmp
 .env
-data
+# 只忽略仓库根下的数据目录（SQLite 库、密钥、采集结果）；
+# 不能写成裸的 `data`，否则 src/data/ 也会被忽略，导致源码漏提交。
+/data/
 *.log
 .DS_Store
-data/collections
